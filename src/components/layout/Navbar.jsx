@@ -6,6 +6,7 @@ import {
   NavigationMenuList,
   NavigationMenuTrigger,
 } from "@/components/ui/navigation-menu";
+import bhan from "@/components/assets/images/bhan.png";
 export default function Navbar() {
   return (
     <>
@@ -13,7 +14,7 @@ export default function Navbar() {
         {/*BHAAN LOGO*/}
         <div className="flex justify-start items-center">
           <img
-            src="src/components/assets/images/bhan.png"
+            src={bhan}
             alt=""
             className="h-20"
           />
