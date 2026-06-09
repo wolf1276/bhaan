@@ -1,7 +1,8 @@
 import Router from "./routes/Router";
-
-function App() {
-  return <Router />;
+export default function App() {
+  return (
+    <div className="min-h-screen bg-[#F3EFE6]">
+      <Router />
+    </div>
+  );
 }
-
-export default App;
