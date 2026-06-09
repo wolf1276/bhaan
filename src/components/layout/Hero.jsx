@@ -29,18 +29,19 @@ export default function Hero() {
   };
   return (
     <>
-      <div className="border border-b-2 border-[#C86432] relative h-[70vh] rounded-3xl max-w-7xl mx-auto  overflow-hidden">
+      <div className="relative h-[75vh] rounded-3xl overflow-hidden w-[92%] mx-auto">
         <img
           src={slides[currentslide].image}
           alt={slides[currentslide].title}
           className="w-full h-full object-cover"
         />
+        <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/30 to-transparent" />
         <div>
-          <div className="absolute inset-0 flex flex-col justify-end p-12">
-            <h1 className="text-white text-8xl font-bold mb-7">
+          <div className="absolute inset-0 flex flex-col items-start justify-center px-16">
+            <h1 className="text-white text-7xl font-bold mb-4">
               {slides[currentslide].title}
             </h1>
-            <p className="text-white text-4xl font-light">
+            <p className="text-white text-xl max-w-2xl mb-8 ml-5">
               {slides[currentslide].subtitle}
             </p>
           </div>
